@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCast.Protocol", "src\GCast
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCast.App", "src\GCast.App\GCast.App.csproj", "{0E8710AE-B298-4F18-9EC0-C44A0E41B883}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCast.Protocol.Tests", "test\GCast.Protocol.Tests\GCast.Protocol.Tests.csproj", "{BF0C1C5A-957A-4857-B682-301474858268}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{0E8710AE-B298-4F18-9EC0-C44A0E41B883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E8710AE-B298-4F18-9EC0-C44A0E41B883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E8710AE-B298-4F18-9EC0-C44A0E41B883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF0C1C5A-957A-4857-B682-301474858268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0C1C5A-957A-4857-B682-301474858268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0C1C5A-957A-4857-B682-301474858268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0C1C5A-957A-4857-B682-301474858268}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
