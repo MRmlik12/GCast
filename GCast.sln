@@ -1,28 +1,43 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCast.Protocol", "src\GCast.Protocol\GCast.Protocol.csproj", "{4D6A9BEE-892E-4E07-8E12-6DC751575FD5}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{705247DA-D133-4AB1-B155-3D2AA8793F1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCast.App", "src\GCast.App\GCast.App.csproj", "{0E8710AE-B298-4F18-9EC0-C44A0E41B883}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCast.App", "src\GCast.App\GCast.App.csproj", "{2E5591E8-0F42-486B-97E3-3DD03D112F22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCast.Protocol.Tests", "test\GCast.Protocol.Tests\GCast.Protocol.Tests.csproj", "{BF0C1C5A-957A-4857-B682-301474858268}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCast.Protocol", "src\GCast.Protocol\GCast.Protocol.csproj", "{03B73A01-F62D-4535-844A-F8856DB6D852}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{72CA8C4E-689E-482A-A45E-1757380A037E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCast.Protocol.Tests", "test\GCast.Protocol.Tests\GCast.Protocol.Tests.csproj", "{7377C0F4-B30B-4978-BD80-BA0081026C77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D6A9BEE-892E-4E07-8E12-6DC751575FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D6A9BEE-892E-4E07-8E12-6DC751575FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D6A9BEE-892E-4E07-8E12-6DC751575FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D6A9BEE-892E-4E07-8E12-6DC751575FD5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E8710AE-B298-4F18-9EC0-C44A0E41B883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E8710AE-B298-4F18-9EC0-C44A0E41B883}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E8710AE-B298-4F18-9EC0-C44A0E41B883}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E8710AE-B298-4F18-9EC0-C44A0E41B883}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF0C1C5A-957A-4857-B682-301474858268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF0C1C5A-957A-4857-B682-301474858268}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF0C1C5A-957A-4857-B682-301474858268}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF0C1C5A-957A-4857-B682-301474858268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5591E8-0F42-486B-97E3-3DD03D112F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5591E8-0F42-486B-97E3-3DD03D112F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5591E8-0F42-486B-97E3-3DD03D112F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5591E8-0F42-486B-97E3-3DD03D112F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B73A01-F62D-4535-844A-F8856DB6D852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B73A01-F62D-4535-844A-F8856DB6D852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B73A01-F62D-4535-844A-F8856DB6D852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B73A01-F62D-4535-844A-F8856DB6D852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7377C0F4-B30B-4978-BD80-BA0081026C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7377C0F4-B30B-4978-BD80-BA0081026C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7377C0F4-B30B-4978-BD80-BA0081026C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7377C0F4-B30B-4978-BD80-BA0081026C77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E5591E8-0F42-486B-97E3-3DD03D112F22} = {705247DA-D133-4AB1-B155-3D2AA8793F1B}
+		{03B73A01-F62D-4535-844A-F8856DB6D852} = {705247DA-D133-4AB1-B155-3D2AA8793F1B}
+		{7377C0F4-B30B-4978-BD80-BA0081026C77} = {72CA8C4E-689E-482A-A45E-1757380A037E}
 	EndGlobalSection
 EndGlobal

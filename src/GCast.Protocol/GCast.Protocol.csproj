@@ -7,7 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Makaretu.Dns.Multicast" Version="0.27.0"/>
+        <PackageReference Include="Avalonia" Version="0.10.15" />
+        <PackageReference Include="Flurl" Version="3.0.6" />
+        <PackageReference Include="Flurl.Http" Version="3.2.4" />
+        <PackageReference Include="Makaretu.Dns.Multicast" Version="0.27.0" />
     </ItemGroup>
 
 </Project>
