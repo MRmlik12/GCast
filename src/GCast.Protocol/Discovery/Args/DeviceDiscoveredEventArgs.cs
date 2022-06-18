@@ -4,5 +4,5 @@ namespace GCast.Protocol.Discovery.Args;
 
 public class DeviceDiscoveredEventArgs : EventArgs
 {
-    public DiscoveryDeviceModel Device { get; set; } = null!;
+    public DeviceModel DeviceModel { get; set; } = null!;
 }

@@ -26,7 +26,7 @@ public class DiscoveryDevices : IDisposable
         _mdns = new MulticastService();
         _sd = new ServiceDiscovery(_mdns);
 
-        _mdns.AnswerReceived += (_, args) =>
+        _mdns.AnswerReceived += async (_, args) =>
         {
             var message = args.Message.Answers[0];
 
@@ -36,12 +36,15 @@ public class DiscoveryDevices : IDisposable
                          record.Type == DnsType.TXT && record.Name.Labels[0] != "google-devices"))
             {
                 var txtRecord = (TXTRecord)record;
-                var deviceModel = DeviceConfigReader.GetDeviceModel(txtRecord.Strings);
-
+                var discoveryModel = DeviceConfigReader.GetDeviceModel(txtRecord.Strings);
                 var handler = OnDeviceDiscovered;
+
+                var deviceModel = await Requests.GetDeviceInfo(args.RemoteEndPoint);
+                deviceModel.DiscoveryModel = discoveryModel;
+
                 handler?.Invoke(this, new DeviceDiscoveredEventArgs
                 {
-                    Device = deviceModel
+                    DeviceModel = deviceModel
                 });
             }
         };
