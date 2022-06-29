@@ -17,7 +17,7 @@ public class DeviceConfigReaderTests
         "fn=LoremIpsum"
     };
 
-    [Fact]
+    [Fact, Trait("type", "unit")]
     public void GetParsedDeviceConfig_ChecksParsedValues()
     {
         var deviceModel = DeviceConfigReader.GetDeviceModel(_getRawStrings);
