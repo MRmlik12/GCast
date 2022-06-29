@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(OpenSSL REQUIRED)
 
 #add_executable(GCast_Protocol_Certificates device_certificate.cpp)
-add_library(${PROJECT_NAME} SHARED device_certificate.cpp device_certificate.h)
+add_library(${PROJECT_NAME} SHARED device_certificate.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE OpenSSL::SSL OpenSSL::Crypto)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
