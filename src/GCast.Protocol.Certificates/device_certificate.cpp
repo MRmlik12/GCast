@@ -1,5 +1,5 @@
 #ifdef _WIN32
-#pragma comment( lib, "Ws2_32.lib")
+#pragma comment(lib, "Ws2_32.lib")
 #include <WinSock2.h>
 #include <WS2tcpip.h>
 #elif
@@ -39,7 +39,7 @@ BSTR GetDevicePeerCertificate(const char* ip) {
 #ifdef _WIN32
     auto isReady = WSAStartup(MAKEWORD(2, 2), &wsaData);
 
-    if (isReady == NOERROR) {
+    if (isReady != NOERROR) {
         return NULL;
     }
 #endif
