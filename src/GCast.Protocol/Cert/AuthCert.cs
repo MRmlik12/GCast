@@ -4,9 +4,9 @@ namespace GCast.Protocol.Cert;
 
 public static class AuthCert
 {
-    private const string DllName = "Libs/gcast_protocol_certificates.dll";
+    private const string DllPath = "Libs/gcast_protocol_certificates.dll";
 
-    [DllImport(DllName)]
+    [DllImport(DllPath)]
     private static extern IntPtr GetDevicePeerCertificate(string ip);
 
     public static string? GetCert(string ip)
